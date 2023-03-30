@@ -2,7 +2,7 @@
 
 장고를 활용한 파이썬 복습
 
-|사용| 내용|
+|개발환경|   |
 |----|----|
 |프레임 워크(FrameWork) | Django|
 |DB | Mysql (변경 될 수도 있음)|
@@ -21,3 +21,4 @@
 # 디자인 상황
 
 <img src="https://user-images.githubusercontent.com/45348509/228899914-e2177acd-3311-4a5a-8ddc-eaedc039b780.JPG" width = "400" height = "400"/> 
+
