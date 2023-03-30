@@ -12,4 +12,4 @@ DB : Mysql (변경 될 수도 있음)
        Java와 Javascript, Python 중 어떤 것으로 개발할지 고민하다가 AI에 대해 공부중인 언어인 Python으로 개발하면 복습이 가능할 거라 생각으로 언어를 Python으로 정함
        Flask와 Django 중 풀 스택 개발이 가능한 Django를 선택함
       
-![현포트폴리오사이트](https://user-images.githubusercontent.com/45348509/228821787-f243f73c-7160-4428-ae6c-5eddbf190561.JPG){: width="200" height="200"}
+<img src="[https://user-images.githubusercontent.com/51365114/119627750-716f3100-be47-11eb-8e83-686b23c2c161.png](https://user-images.githubusercontent.com/45348509/228821787-f243f73c-7160-4428-ae6c-5eddbf190561.JPG)  width="200" height="200"/>
