@@ -5,7 +5,7 @@
 
 프레임 워크(FrameWork)ㅣ Django ㅣ
 DB ㅣ Mysql (변경 될 수도 있음) ㅣ
-디자인(Design) ㅣ Adobe XD  
+디자인(Design) ㅣ Adobe XD  ㅣ
 
 
 
