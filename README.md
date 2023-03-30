@@ -17,3 +17,6 @@
        Flask와 Django 중 풀 스택 개발이 가능한 Django를 선택함
        
 
+디자인 상황
+
+<img src="https://user-images.githubusercontent.com/45348509/228899914-e2177acd-3311-4a5a-8ddc-eaedc039b780.JPG" width = "400" height = "400"/> 
