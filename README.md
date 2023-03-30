@@ -3,9 +3,9 @@
 장고를 활용한 파이썬 복습
 
 
-프레임 워크(FrameWork)ㅣ Django ㅣ
-DB ㅣ Mysql (변경 될 수도 있음) ㅣ
-디자인(Design) ㅣ Adobe XD  ㅣ
+프레임 워크(FrameWork) | Django   
+DB | Mysql (변경 될 수도 있음)  
+디자인(Design) | Adobe XD 
 
 
 
