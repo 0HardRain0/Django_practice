@@ -2,7 +2,7 @@
 
 장고를 활용한 파이썬 복습
 
-|개발환경|   |
+|Tech Stack|   |
 |----|----|
 |프레임 워크(FrameWork) | Django|
 |DB | Mysql (변경 될 수도 있음)|
