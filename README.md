@@ -2,7 +2,8 @@
 
 장고를 활용한 파이썬 복습
 
-
+|사용| 내용|
+|----|----|
 |프레임 워크(FrameWork) | Django|
 |DB | Mysql (변경 될 수도 있음)|
 |디자인(Design) | Adobe XD|
