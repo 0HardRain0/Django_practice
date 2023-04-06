@@ -21,5 +21,5 @@
 -------------------------------------------------------------
 ### 디자인 상황
 
-<img src="https://user-images.githubusercontent.com/45348509/228899914-e2177acd-3311-4a5a-8ddc-eaedc039b780.JPG" width = "400" height = "400"/> 
 
+![포트폴리오사이트XD_ver2](https://user-images.githubusercontent.com/45348509/230382534-7a8b870c-f43a-45b4-b44f-25754361ef76.JPG)
