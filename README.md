@@ -7,6 +7,7 @@
 간단한 투표 기능
 
 Tech Stacks
+
 -django
 -sqlite3 (django in simple DB)
 
