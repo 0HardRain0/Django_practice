@@ -9,6 +9,7 @@
 Tech Stacks
 
 -django
+
 -sqlite3 (django in simple DB)
 
 
