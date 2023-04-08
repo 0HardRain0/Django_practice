@@ -6,7 +6,7 @@
 
 간단한 투표 기능
 
-##Tech Stacks
+## Tech Stacks
 
 -django
 
