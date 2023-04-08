@@ -4,5 +4,11 @@
 
 파이썬 복습 및 장고를 이용한 포트폴리오 사이트를 만들기 위해서 먼저 하게 되었음.
 
+간단한 투표 기능
+
+Tech Stacks
+-django
+-sqlite3 (django in simple DB)
+
 
 ![Capture](https://user-images.githubusercontent.com/45348509/230703072-08192b0a-55ac-4520-8e70-2fc88f07b6ea.JPG)
