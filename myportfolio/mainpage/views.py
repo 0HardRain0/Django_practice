@@ -2,27 +2,29 @@ from django.shortcuts import get_object_or_404, render
 from django.template import loader
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.views import generic
+from django.utils import timezone
 
 # Create your views here.
 
-
-
-
 from .models import Question, Choice
 
+class IndexView(generic.ListView):
+    template_name = "mainpage/index.html"
+    context_object_name = "lastest_question_list"
 
-def index(request):
-    latest_question_list = Question.objects.order_by("-pub_date")[:5]
-    context = {"latest_question_list": latest_question_list}
-    return render(request, "mainpage/index.html", context)
+    def get_queryset(self):
+        # Return the last five published question.
+        # return Question.objects.order_by("-pub_date")[:5]
+        return Question.object.filter(pub_date__lte=timezone.now()).order_by("-pub_date")[:5]
 
-def detail(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(request, "mainpage/detail.html", {"question": question})
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = "mainpage/detail.html"
 
-def results(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(request, "mainpage/results.html", {"question": question})
+class ResultsView(generic.DetailView):
+    model = Question
+    template_name = "mainpage/results.html"
 
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
@@ -54,3 +56,17 @@ def vote(request, question_id):
 #         "latest_question_list": latest_question_list,
 #     }
 #     return HttpResponse(template.render(context, request))
+
+# def index(request):
+#     latest_question_list = Question.objects.order_by("-pub_date")[:5]
+#     context = {"latest_question_list": latest_question_list}
+#     return render(request, "mainpage/index.html", context)
+#
+# def detail(request, question_id):
+#     question = get_object_or_404(Question, pk=question_id)
+#     return render(request, "mainpage/detail.html", {"question": question})
+#
+# def results(request, question_id):
+#     question = get_object_or_404(Question, pk=question_id)
+#     return render(request, "mainpage/results.html", {"question": question})
+
