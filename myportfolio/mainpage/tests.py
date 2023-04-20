@@ -41,15 +41,24 @@ class QuestionIndexViewTests(TestCase):
         self.assertContains(response, "No mainpage are available.")
 
     def test_past_question(self):
-        question = create_question(question_text="Past question.", days=-30)
-        response = self.client.get(reverse("mainpage:index"))
-        self.assertQuerySetEqual(response.context["latest_question_list"],[question])
+        past_question = create_question(question_text="Past Question.", days=-5)
+        url = reverse("mainpage:detail",args=(past_question.id,))
+        response = self.client.get(url)
+        self.assertContains(response, past_question.question_text)
+        # question = create_question(question_text="Past question.", days=-30)
+        # response = self.client.get(reverse("mainpage:index"))
+        # self.assertQuerySetEqual(response.context["latest_question_list"],[question])
 
     def test_future_question(self):
-        create_question(question_text="Future question.",days=30)
-        response = self.client.get(reverse("mainpage:index"))
-        self.assertContains(response, "No mainpage are available.")
-        self.assertQuerySetEqual(response.context["latest_question_list"],[])
+        future_question = create_question(question_text="Future question.", days=5)
+        url = reverse("mainpage:detail", args=(future_question.id,))
+        response = self.client.get(url)
+        self.assertEqual(response.statis_code, 404)
+
+        # create_question(question_text="Future question.",days=30)
+        # response = self.client.get(reverse("mainpage:index"))
+        # self.assertContains(response, "No mainpage are available.")
+        # self.assertQuerySetEqual(response.context["latest_question_list"],[])
 
     def test_future_question_and_past_question(self):
         question = create_question(question_text="Past question.", days=-30)

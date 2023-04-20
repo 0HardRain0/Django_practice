@@ -21,6 +21,8 @@ class IndexView(generic.ListView):
 class DetailView(generic.DetailView):
     model = Question
     template_name = "mainpage/detail.html"
+    def get_queryset(self):
+        return Question.objects.filter(pub_date__lite=timezone.now())
 
 class ResultsView(generic.DetailView):
     model = Question
