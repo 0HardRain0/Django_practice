@@ -6,7 +6,7 @@
 
 간단한 투표 기능이 있는 앱
 
-2. 장고의 심플한 CRUD 만들어보기(main)
+2. 장고의 심플한 CRUD 만들어보기(homepage)
 
 ## Tech Stacks
 
